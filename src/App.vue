@@ -5,16 +5,26 @@ export default {
     components: {
         AppHeader,
     },
-    data(){
+    data() {
         return {
 
         }
     },
 }
 </script>
+
 <template>
-  <AppHeader />
-  <AppFooter />
+
+    <!-- Header  -->
+    <AppHeader />
+    <!-- /Header  -->
+
+    
+    <router-view></router-view>
+
+    <!-- Footer -->
+    <AppFooter />
+    <!-- /Footer -->
+
 </template>
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
