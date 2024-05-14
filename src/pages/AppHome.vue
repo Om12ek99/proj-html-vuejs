@@ -1,5 +1,29 @@
 <script>
+import AppHero from "./components/HomeComponents/AppHero.vue";
+import AppConsultation from "./components/HomeComponents/AppConsultation.vue";
+import AppBrands from "./components/HomeComponents/AppBrands.vue";
+import AppListCard from "./components/HomeComponents/AppListCard.vue";
+import AppClientBoost from "./components/HomeComponents/AppClientBoost.vue";
+import AppValue from "./components/HomeComponents/AppValue.vue";
+import AppAwards from "./components/HomeComponents/AppAwards.vue";
+import AppQuote from "./components/HomeComponents/AppQuote.vue";
+import AppMarketing from "./components/HomeComponents/AppMarketing.vue";
+
+
+
+
+
 export default {
+    components:
+    AppHero,
+    AppConsultation,
+    AppBrands,
+    AppListCard,
+    AppClientBoost,
+    AppValue,
+    AppAwards,
+    AppQuote,
+    AppMarketing,
     data(){
         return {
             
@@ -9,6 +33,15 @@ export default {
 </script>
 
 <template>
+    <AppHero/>
+    <AppConsultation/>
+    <AppBrands/>
+    <AppListCard/>
+    <AppClientBoost/>
+    <AppValue/>
+    <AppAwards/>
+    <AppQuote/>
+    <AppMarketing/>
 </template>
 <style scoped lang="scss">
 </style>
