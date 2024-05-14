@@ -35,7 +35,7 @@ export default {
 
                     <ul>
                         <li v-for="curList in listArray">
-                            <button class="border border-0 bg-light">
+                            <button class="border border-0 bg-lighte">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
                             {{ curList.text }}   
