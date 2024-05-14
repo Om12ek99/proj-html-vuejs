@@ -1,6 +1,7 @@
 //ricordati di importare AppForm.vue
-import AppForm from "../components/HomeComponents/AppForm.vue"
+
 <script>
+import AppForm from "../HomeComponents/AppForm.vue"
 export default {
     components:{
         AppForm,
