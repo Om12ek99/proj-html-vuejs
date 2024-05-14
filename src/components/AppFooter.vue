@@ -12,9 +12,9 @@ export default {
 </script>
 <template>
     <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="row">
+<footer class="site-footer py-5">
+  <div class="container py-5">
+    <div class="row py-5">
       <div class="col-lg-3">
         <!-- TITOLO -->
         <h3>Grow Your Online Business Strategically, and Improve Customer Retention</h3>
