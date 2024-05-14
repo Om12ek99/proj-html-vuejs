@@ -33,6 +33,15 @@ export default {
 </script>
 
 <template>
+    <AppHero/>
+    <AppConsultation/>
+    <AppBrands/>
+    <AppListCard/>
+    <AppClientBoost/>
+    <AppValue/>
+    <AppAwards/>
+    <AppQuote/>
+    <AppMarketing/>
 </template>
 <style scoped lang="scss">
 </style>
