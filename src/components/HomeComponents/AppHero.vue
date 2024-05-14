@@ -15,9 +15,10 @@ export default {
 }
 </script>
 <template>
-    <div class="col">
+    <div class="container py-5">
+        <div class="row col">
         <h1>Unlock Your Online Growth Potential</h1>
-        <h3>Online Marketingto secure customer retention, leads, and sales. We focus on the bigger picture.</h3>
+        <h3>Online Marketing to secure customer retention, leads, and sales. We focus on the bigger picture.</h3>
         <Button>Our Services</Button>               
         <!-- //NB ricordarti di mettere l'icona della freccia! -->
     </div>
