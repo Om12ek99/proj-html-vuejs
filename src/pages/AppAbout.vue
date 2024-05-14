@@ -3,12 +3,14 @@ import AppAboutHero      from "../components/AppAboutHero.vue";
 import AppAboutBgImg     from "../components/AppAboutBgImg.vue";
 import AppAboutWeEquip   from "../components/AppAboutWeEquip.vue"; 
 import AppAboutSuccesful from "../components/AppAboutSuccesful.vue";
+import AppAboutWeBoost   from "../components/AppAboutWeBoost.vue";
 export default {
     components: {
       AppAboutHero,
       AppAboutBgImg,
       AppAboutWeEquip,
-      AppAboutSuccesful
+      AppAboutSuccesful,
+      AppAboutWeBoost
     },
     data () {
       return {
@@ -66,5 +68,9 @@ export default {
 
   </div>
   <!-- /About Section Succesful -->
+
+  <!-- About Section WeBoost  -->
+  <AppAboutWeBoost />
+  <!-- /About Section WeBoost  -->
 </template>
   
