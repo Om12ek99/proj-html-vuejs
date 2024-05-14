@@ -24,7 +24,7 @@ export default {
 </script>
 <template>
     <!-- NavBarr -->
-    <nav class="navbar bg-body-tertiary position-fixed w-100 top-0 star-0">
+    <nav class="navbar bg-body-tertiary position-fixed w-100 top-0 star-0 z-2">
         <div class="container">
             
             <!-- logo -->

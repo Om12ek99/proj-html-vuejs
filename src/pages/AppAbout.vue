@@ -4,13 +4,15 @@ import AppAboutBgImg     from "../components/AppAboutBgImg.vue";
 import AppAboutWeEquip   from "../components/AppAboutWeEquip.vue"; 
 import AppAboutSuccesful from "../components/AppAboutSuccesful.vue";
 import AppAboutWeBoost   from "../components/AppAboutWeBoost.vue";
+import AppAboutAwards    from "../components/AppAboutAwards.vue";
 export default {
     components: {
       AppAboutHero,
       AppAboutBgImg,
       AppAboutWeEquip,
       AppAboutSuccesful,
-      AppAboutWeBoost
+      AppAboutWeBoost,
+      AppAboutAwards
     },
     data () {
       return {
@@ -35,8 +37,9 @@ export default {
           }, 
          ],
          
-      }
-    }
+      }  
+    },
+   
 }
 </script>
 
@@ -72,5 +75,13 @@ export default {
   <!-- About Section WeBoost  -->
   <AppAboutWeBoost />
   <!-- /About Section WeBoost  -->
+
+  <!-- About Section Awards -->
+  <div class="container">
+    
+        <AppAboutAwards />
+     
+  </div>
+  <!-- /About Section Awards -->
 </template>
   
