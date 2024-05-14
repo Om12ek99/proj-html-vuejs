@@ -44,7 +44,12 @@ export default {
             <div class="col" v-for="brand in brandImages">
                 <img :src="brand.src" alt="">
             </div>
-
+        </div>
+        <!-- Drive leads and Sales with Avada -->
+        <div class="row">
+            <div class="col">
+                <img src="src/assets/img/brands/marketing-expert-cta.png" alt="">
+            </div>
         </div>
     </div>
 </template>
