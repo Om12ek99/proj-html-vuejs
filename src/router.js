@@ -20,7 +20,7 @@ export const router = createRouter({
         {
             path: "/contatti",
             name: "Free Quote",
-            componebt: AppContact,
+            component: AppContact,
         },
     ],
 });
