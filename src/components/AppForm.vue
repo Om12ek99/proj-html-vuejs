@@ -1,8 +1,13 @@
 <script></script>
 
 <template>
+
   <div class="container">
     <div class="row">
+      <div class="col">
+
+        
+      </div>
       <div class="col-md-4 offset-md-3">
         <div class="card">
           <div class="card-body">
