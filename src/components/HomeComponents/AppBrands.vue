@@ -2,10 +2,10 @@
 export default {
     data(){
         return {
-            brandImages: [
+            brandImages: [                                                  //object contenente le icone
                 {
-                    src:"src/assets/img/brands/abstract.webp",
-                    title:"abstract"
+                    src:"src/assets/img/brands/abstract.webp",              //link delle icone
+                    title:"abstract"                                        //nome delle icone
                 },
                 {
                     src:"src/assets/img/brands/cglobal.webp",
@@ -38,7 +38,9 @@ export default {
             <h1>Some Brands We Work With</h1>
             <h3>Quisque aliquet, libero consequat elementum convallis.</h3>
         </div>
+        <!-- riga delle icone -->
         <div class="row">
+            <!-- chiamata dinamica delle icone -->
             <div class="col" v-for="brand in brandImages">
                 <img :src="brand.src" alt="">
             </div>
@@ -47,7 +49,7 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
-.container{
+.container{                                             //eventualmente da modificare con bootrstrap
     .row:first-child{
        text-align: center;
        margin-top:2rem;
