@@ -12,7 +12,7 @@ export default {
     },
     data () {
       return {
-        /*succesArray: [
+        succesArray: [
           {
             icons:"",
             title:"245%",
@@ -30,10 +30,9 @@ export default {
             title:"520+",
             subTitle:"Business",
             paragraf:"Curabitur ac leo nunc. Vestibulum et maruris vel ante finibus",
-          },
-         
+          }, 
          ],
-         */
+         
       }
     }
 }
@@ -54,7 +53,18 @@ export default {
   <!-- /About Section We Equip  -->
 
   <!-- About Section Succesful -->
-    <AppAboutSuccesful />
+  <div class="container">
+    <div class="row">
+      <div class="col" v-for="curCard in succesArray">
+        <AppAboutSuccesful  
+          :title="curCard.title"
+          :subTitle="curCard.subTitle"
+          :paragraf="curCard.paragraf"
+        />
+      </div>
+    </div>
+
+  </div>
   <!-- /About Section Succesful -->
 </template>
   
