@@ -1,21 +1,21 @@
 <script>
 export default {
-    data(){
+    data() {
         return {
             menu: [
                 {
-                    title     : "home",
-                    routeName : "Home"
+                    title: "Home",
+                    routeName: "home"
                 },
                 {
-                    title     : "about",
-                    routeName : "About"
+                    title: "About",
+                    routeName: "about"
                 },
                 {
-                    title     : "contatti",
-                    routeName : "Free Quote"
+                    title: "Free Quote",
+                    routeName: "Free Quote"
                 },
-                
+
             ]
         }
 
@@ -23,7 +23,48 @@ export default {
 }
 </script>
 <template>
+    <!-- NavBarr -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/logo-img-avada.jpg" alt="">
+            </a>
+            <!-- /logo -->
 
+            <ul class="ms_navigation d-flex gap-5 fs-3" >
+                <li v-for="curLink in menu" >
+                    <router-link 
+                     :to="{name: curLink.routeName}">
+                     {{ curLink.title }}
+                    </router-link>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NavBarr -->
 </template>
 <style scoped lang="scss">
+@use "../style/partial/variables" as *;
+    img {
+        max-width: 300px;    
+    }
+    ul {
+        list-style-type: none;
+
+        a:hover {
+            
+            color:#f86011;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        }
+
+
+   
+
 </style>
