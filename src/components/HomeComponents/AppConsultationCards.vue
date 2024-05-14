@@ -29,7 +29,6 @@ export default {
                 <h2>{{ ConsultTitle }}</h2>
                 <p>{{ ConsultText }}</p>
                 <button>{{ ConsultButton }}</button>
-
             </div>
         </div>
     </div>

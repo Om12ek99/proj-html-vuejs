@@ -1,6 +1,12 @@
 <script>
+import AppConsultationCards from "../components/HomeComponents/AppConsultationCards.vue";
 export default {
+    
+    components:{
+        AppConsultationCards,
+    }
     data(){
+
         return {
             
         }
