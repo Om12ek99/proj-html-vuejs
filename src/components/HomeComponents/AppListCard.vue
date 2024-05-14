@@ -32,24 +32,33 @@ export default {
 }
 </script>
 <template>
-    <div class="container">
-        <div class="row text-center mt-5 mb-5">
-        <h1 class=" text">Trusted by Leading Organisations</h1>
+  <div class="container">
+    <div class="row text-center mt-5 mb-5">
+      <h1 class="text">Trusted by Leading Organisations</h1>
     </div>
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-md-4" v-for="(item, index) in ListCardArray" :key="index">
         <AppCardStaff :image="item.image" :text="item.text" :data="item.data" :paragraf="item.paragraf" />
       </div>
     </div>
+    <div class="row d-flex justify-content-center">
+      <a href="#" class="w-75 py-3 text-center">
+        <button type="button" class="btn ms_button text-light py-2 px-4 fs-3">
+          Read more case studies
+        </button>
+      </a>
     </div>
+  </div>
+</template>
 
-  </template>
 <style scoped lang="scss">
 .text{
     font-weight:bold ;
     font-size: 3.5rem;
 }
-
+.ms_button {
+      background-color:#f86011;
+    }
     
 
 </style>
