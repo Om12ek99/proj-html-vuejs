@@ -1,5 +1,5 @@
 <script>
-import AppForm from "../components/AppForm.vue"
+import AppForm from "../components/HomeComponents/AppForm.vue"
 export default {
     components: {
       AppForm,
