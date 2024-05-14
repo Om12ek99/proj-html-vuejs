@@ -15,6 +15,7 @@ export default {
 }
 </script>
 <template>
+   
     <div class="col">
         <h1>Unlock Your Online Growth Potential</h1>
         <h3>Online Marketingto secure customer retention, leads, and sales. We focus on the bigger picture.</h3>
