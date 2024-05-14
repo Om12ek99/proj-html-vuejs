@@ -5,15 +5,15 @@ export default {
             listArray: [
                 {                   
                     text  : "Costumer Service",
-                    paragr: ""
+                    
                 },
                 {                    
                     text  : "Online Consultation",
-                    paragr: ""
+                    
                 },
                 {                  
                     text  : "Sales Management",
-                    paragr: ""
+                   
                 },
 
             ],
@@ -35,9 +35,11 @@ export default {
 
                     <ul>
                         <li v-for="curList in listArray">
-                            <i class="fa-solid fa-plus"></i>
+                            <button class="border border-0 bg-light">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
                             {{ curList.text }}   
-                            <div>
+                            <div class="ms_paragraf d-none">
                                  Atque doloribus quasi corporis impedit incidunt 
                                  tenetur obcaecati nostrum ipsum blanditiis quo sapiente eos, 
                                  quam aliquid nam, eveniet voluptatem quisquam
@@ -57,6 +59,7 @@ export default {
 </template>
 
 <style scoped leng="scss" > 
+@use "../style/partial/variables" as *;
   p {
     font-size: 3.5rem;
   }
@@ -65,7 +68,8 @@ export default {
     list-style-type: none;
   }
 
-  .fa-solid {
-
+  i:hover {
+    color:#f86011 ; 
   }
+  
 </style>
