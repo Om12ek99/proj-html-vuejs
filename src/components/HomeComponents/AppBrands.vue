@@ -1,5 +1,8 @@
 <script>
-export default {
+import AppConsultantSingle from './AppConsultantSingle.vue';
+export default {    
+    components:
+    AppConsultantSingle,
     data(){
         return {
             brandImages: [                                                  //object contenente le icone
@@ -47,9 +50,7 @@ export default {
         </div>
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
-            <div class="col">
-                <img src="src/assets/img/brands/marketing-expert-cta.png" alt="">
-            </div>
+            <AppConsultantSingle/>
         </div>
     </div>
 </template>

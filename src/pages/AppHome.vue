@@ -5,7 +5,7 @@ import AppBrands from "../components/HomeComponents/AppBrands.vue";
 import AppListCard from "../components/HomeComponents/AppListCard.vue";
 import AppClientBoost from "../components/HomeComponents/AppClientBoost.vue";
 import AppValue from "../components/HomeComponents/AppValue.vue";
-import AppAwards from "../components/HomeComponents/AppAwards.vue";
+import AppAboutAwards    from "../components/AppAboutAwards.vue";
 import AppQuote from "../components/HomeComponents/AppQuote.vue";
 import AppMarketing from "../components/HomeComponents/AppMarketing.vue";
 
@@ -21,7 +21,7 @@ export default {
         AppListCard,
         AppClientBoost,
         AppValue,
-        AppAwards,
+        AppAboutAwards,
         AppQuote,
         AppMarketing,
     },
@@ -40,7 +40,7 @@ export default {
     <AppListCard/>
     <AppClientBoost/>
     <AppValue/>
-    <AppAwards/>
+    <AppAboutAwards/>
     <AppQuote/>
     <AppMarketing/>
 </template>
