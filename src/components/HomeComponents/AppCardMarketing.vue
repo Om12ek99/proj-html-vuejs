@@ -7,5 +7,9 @@ export default {
     }
 }
 </script>
-<template></template>
+<template>
+    <div class="container">
+        
+    </div>
+</template>
 <style scoped lang="scss"></style>
