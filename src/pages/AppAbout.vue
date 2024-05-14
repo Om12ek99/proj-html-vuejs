@@ -1,9 +1,11 @@
 <script>
 import AppAboutHero from "../components/AppAboutHero.vue";
- 
+import AppAboutBgImg from "../components/AppAboutBgImg.vue"; 
 export default {
     components: {
-      AppAboutHero
+      AppAboutHero,
+      AppAboutBgImg,
+
     }
 }
 </script>
@@ -13,5 +15,9 @@ export default {
   <!-- About Section Hero -->
   <AppAboutHero />
   <!-- /About Section Hero -->
+
+  <!-- About Section Img Bg -->
+  <AppAboutBgImg />
+  <!-- /About Section Img Bg -->
 </template>
   
