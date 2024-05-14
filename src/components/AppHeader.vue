@@ -24,7 +24,7 @@ export default {
 </script>
 <template>
     <!-- NavBarr -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary position-fixed w-100 top-0 star-0">
         <div class="container">
             
             <!-- logo -->
@@ -57,10 +57,7 @@ export default {
             
             color:#f86011;
         }
-        a {
-            text-decoration: none;
-            color: black;
-        }
+       
         
         }
 
