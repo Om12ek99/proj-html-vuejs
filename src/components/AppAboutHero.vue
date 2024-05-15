@@ -39,6 +39,6 @@
     }
 
     .ms_button {
-      background-color:$color-orange;
+      background-color:$orange-color;
     }
 </style>

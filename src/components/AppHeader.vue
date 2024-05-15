@@ -56,10 +56,10 @@ export default {
         list-style-type: none;
 
         li:hover {
-            border-bottom: 3px solid $color-orange ;
+            border-bottom: 3px solid$orange-color ;
             
-            a {            
-                color:$color-orange;
+            a:hover {            
+                color:$orange-color;
             }
            
         }

@@ -41,6 +41,6 @@
         font-size: 3.5rem;
     }
     .ms_button {
-      background-color:$color-orange;
+      background-color:$orange-color;
     }
 </style>
