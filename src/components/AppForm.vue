@@ -1,9 +1,19 @@
-<script></script>
+<script>
+
+import AppCard from "../components/AppCard.vue";
+export default {
+    components: {
+    
+      AppCard,
+     
+    }
+}
+</script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 offset-md-3">
+
+   
+      
         <div class="card">
           <div class="card-body">
             <form>
@@ -68,9 +78,8 @@
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+  
+  
 </template>
 
 <style></style>

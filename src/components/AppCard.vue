@@ -6,7 +6,8 @@
 
 <template>
   <div class="col">
-    <div class="card" style="width: 18rem">
+
+    <div class="card" >
       
       <img src="../assets/img/cardappcard.jpg" class="card-img-top" alt="..." /> 
        <h5 class="card-title">Richard Madsen</h5>
