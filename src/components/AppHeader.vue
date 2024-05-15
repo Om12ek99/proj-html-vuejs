@@ -25,12 +25,12 @@ export default {
 </script>
 <template>
     <!-- NavBarr -->
-    <nav class="navbar bg-body-tertiary position-fixed w-100 top-0 star-0 z-2">
+    <nav class="navbar bg-body position-fixed w-100 top-0 star-0 z-2">
         <div class="container">
             
             <!-- logo -->
             <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo-img-avada.jpg" alt="">
+                <img class="ms_logo" src="../assets/img/logo-img-avada.jpg" alt="">
             </a>
             <!-- /logo -->
 
@@ -58,7 +58,7 @@ export default {
         li:hover {
             border-bottom: 3px solid $color-orange ;
             
-            a:hover {            
+            a {            
                 color:$color-orange;
             }
            
@@ -66,7 +66,7 @@ export default {
         
     }
 
-
+    
    
 
 </style>
