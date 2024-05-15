@@ -26,7 +26,7 @@ export default {
                 <br>
                 </div>
                 <a href="#" class="w-75 py-3 text-center">
-        <button type="button" class="btn ms_button  py-2 px-4 fs-3">
+        <button type="button" class="btn ms_button  py-2 px-4 fs-5">
           Our Services
         </button>
       </a>

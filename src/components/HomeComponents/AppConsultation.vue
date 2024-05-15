@@ -51,10 +51,18 @@ export default {
           <img :src="card.image" alt="Card Image">
         </div>
         <div class="col">
-          <h5>{{ card.intest }}</h5>
+          <div class="text">
+            <h5>{{ card.intest }}</h5>
           <h1>{{ card.title }}</h1>
+          <br>
           <p>{{ card.text }}</p>
-          <button>{{ card.buttontext }}</button>
+          <br>
+          <button type="button" class="btn ms_button text-light ">
+            {{ card.buttontext }}
+                    </button>
+            
+          </div>
+          
         </div>
       </div>
       <div class="spacer"></div>
@@ -66,7 +74,40 @@ export default {
     margin-top: 50px; 
   }
     img{
-        width: 500px;
+        width: 600px;
         height: 500px;
+  
     }
+    .ms_button {
+    
+    background-color:#f86011;
+    padding: 0.8rem 2.3rem;
+    border-radius: 12px;
+    font-size: 18px
+    
+  }
+  .ms_button:hover {
+  background-color: #e04e10; 
+}
+  .row{
+    padding-bottom: 18.5rem;
+    .col:last-child{
+        
+        .text{
+          padding-top: 3rem;
+          padding-left: 5rem;
+          width: 70%;
+            h1{
+                font-size: 3.2rem;
+              }
+              p{
+                font-size: 1.3rem;
+              }
+        }
+
+      }
+
+  }
+  
+  
 </style>
