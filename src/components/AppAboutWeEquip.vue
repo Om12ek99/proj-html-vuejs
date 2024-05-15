@@ -48,18 +48,23 @@ export default {
                         We Equip Leaders with Strategy and
                         vision
                     </p>
-
+                    
                     <ul>
-                        <li v-for="(curList, index ) in listArray" class="d-flex " :key="index">
-                            <button @click="showParagr(index)"  class="border border-0 ms_btn">                               
-                               <span class="ms_icons">{{ curList.visible ? "-" : "+" }}</span> 
-                            </button>
-                         
-                            <div>
-                                <h3 class="px-4 py-3 ">{{ curList.text }}</h3>
-                                    <div class="ms_paragraf" v-if="curList.visible">
-                                        <p class="ms_par-text">{{ curList.parText }}</p>
-                                    </div>
+                        <li v-for="(curList, index ) in listArray"  :key="index">
+                            <div class="d-flex py-2">
+                                <button @click="showParagr(index)"  class="border border-0 ms_btn">   
+                                    <i class="fa-solid fa-plus" v-if="!curList.visible"></i>                            
+                                    <i class="fa-solid fa-minus" v-else></i>                                                           
+                                </button>
+
+                                <h3 class="px-5">{{ curList.text }}</h3>
+                            </div>
+                           
+                            
+                            <div>                                   
+                                <div class="ms_paragraf px-5" v-if="curList.visible">
+                                        <p class="ms_par-text px-4">{{ curList.parText }}</p>
+                                </div>
                             </div>
                             
                         </li>
@@ -90,7 +95,7 @@ export default {
     
       .ms_btn {
         background-color: white;
-        .ms_icons{
+        i{
           font-size: 1.5rem;
           
          
@@ -99,7 +104,7 @@ export default {
  
   }
   
-  .ms_icons:hover {
+  i:hover {
     color:$orange-color;   
   }
 
