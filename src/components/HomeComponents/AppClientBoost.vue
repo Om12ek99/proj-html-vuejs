@@ -45,7 +45,14 @@ img {
 }
 
 .ms_button {
-      background-color:#f86011;
+  background-color:#f86011;
+  margin-top: 4.5rem;
+    padding: 0.8rem 2.3rem;
+    border-radius: 12px;
+    font-size: 18px
     }
+    .ms_button:hover {
+  background-color: #e04e10; 
+}
 
 </style>
