@@ -1,18 +1,13 @@
 <script></script>
 
 <template>
-
   <div class="container">
     <div class="row">
-      <div class="col">
-
-        
-      </div>
-      <div class="col-md-4 offset-md-3">
+      <div class="col-md-5 offset-md-3">
         <div class="card">
           <div class="card-body">
             <form>
-              <div class="form-group">
+              <div class="form-grou py-2">
                 <label for="name">Nome</label>
                 <input
                   type="text"
@@ -21,7 +16,7 @@
                   placeholder="Inserisci il tuo nome"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group py-2">
                 <label for="surname">Cognome</label>
                 <input
                   type="text"
@@ -30,7 +25,7 @@
                   placeholder="Inserisci il tuo cognome"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group py-3">
                 <label for="number">Numero</label>
                 <input
                   type="number"
@@ -40,7 +35,7 @@
                 />
               </div>
 
-              <div class="form-group">
+              <div class="form-group py-3">
                 <label for="email">Indirizzo email</label>
                 <input
                   type="email"
@@ -50,7 +45,7 @@
                 />
               </div>
 
-              <div class="mb-3">
+              <div class="mb-3 py-2">
                 <label for="exampleFormControlTextarea1" class="form-label"
                   >la tua sfida</label
                 >
@@ -61,13 +56,15 @@
                 ></textarea>
               </div>
 
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select py-2" aria-label="Default select example">
                 <option selected>Servizi</option>
                 <option value="1">Digital Marketing</option>
                 <option value="2">Web Strategy</option>
                 <option value="3">Web Development</option>
               </select>
-              <button type="submit" class="btn btn-primary">Iscriviti</button>
+              <div class="d-grid gap-2 py-3">
+                <button class="btn btn-warning" type="button">Button</button>
+              </div>
             </form>
           </div>
         </div>
