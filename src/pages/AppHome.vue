@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-    <AppHero/>
+    <AppHero class="hero"/>
     <AppConsultation/>
     <AppBrands/>
     <AppListCard/>
@@ -56,5 +56,9 @@ export default {
 }
 .marketingcard{
     margin-top: 4rem;
+}
+.hero{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 </style>
