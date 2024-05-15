@@ -41,10 +41,12 @@ export default {
         <h2 class="fw-bolder" >Awards</h2>
         <ul class="d-flex justify-content-center">
             <li v-for="curAwards in awardsArray" class="text-center">
-                <img 
-                class="w-50" 
-                :src="getImgAwards(curAwards.img)" 
-                alt="">
+                <a href="#">
+                    <img 
+                    class="w-50" 
+                    :src="getImgAwards(curAwards.img)" 
+                    alt="">
+                </a>
                 <div class="fw-bolder">{{ curAwards.title }}</div>
                 <div class="fw-bolder" >{{ curAwards.subTitle }}</div>
             </li>
@@ -56,9 +58,13 @@ export default {
 @use "../style/partial/variables" as *;
     ul {
         list-style-type: none;
+
     }
     .color {
-       color:rgb(100 144 255);
+        color:rgb(100 144 255);
+        a:hover {
+            color:$orange-color;
+        }
     }
 
 </style>

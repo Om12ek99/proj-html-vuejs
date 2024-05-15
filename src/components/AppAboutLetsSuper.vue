@@ -20,7 +20,7 @@
 @use "../style/partial/variables" as *;
  
  .ms_bg-orange {
-    background-color:$color-orange;
+    background-color:$orange-color;
 
      .ms_title {
          font-size: 3.5rem;
@@ -32,7 +32,7 @@
      }
 
      .ms_btn:hover {
-        background-color: $color-orange;
+        background-color:$orange-color;
         color:white;
     
     } 

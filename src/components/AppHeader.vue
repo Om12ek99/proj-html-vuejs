@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            activeIndex:false,
             menu: [
                 {
                     title: "Home",
@@ -24,18 +25,23 @@ export default {
 </script>
 <template>
     <!-- NavBarr -->
-    <nav class="navbar bg-body-tertiary position-fixed w-100 top-0 star-0 z-2">
+    <nav class="navbar bg-body position-fixed w-100 top-0 star-0 z-2">
         <div class="container">
             
             <!-- logo -->
             <a class="navbar-brand" href="#">
+<<<<<<< HEAD
                 <img src="../assets/img/logo-img-avada.png" alt="">
+=======
+                <img class="ms_logo" src="../assets/img/logo-img-avada.jpg" alt="">
+>>>>>>> 5d785cae040e2e968363c9f8b3f1d293b88c59ea
             </a>
             <!-- /logo -->
 
-            <ul class="ms_navigation d-flex gap-5 fs-3" >
-                <li v-for="curLink in menu" >
+            <ul class="ms_navigation d-flex gap-5 fs-3 " >
+                <li v-for="curLink in menu" class="py-3" >
                     <router-link 
+                     :class="[activeIndex=true]"
                      :to="{name: curLink.routeName}">
                      {{ curLink.title }}
                     </router-link>
@@ -53,15 +59,18 @@ export default {
     ul {
         list-style-type: none;
 
-        a:hover {
+        li:hover {
+            border-bottom: 3px solid$orange-color ;
             
-            color:#f86011;
+            a:hover {            
+                color:$orange-color;
+            }
+           
         }
-       
         
     }
 
-
+    
    
 
 </style>

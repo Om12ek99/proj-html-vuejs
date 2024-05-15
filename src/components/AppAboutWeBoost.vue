@@ -9,11 +9,11 @@
                 <img class="rounded" src="../assets/img/we-boost-our-clients-1200x1098.jpg" alt="">
             </div>
             <div class="col d-flex justify-content-start align-items-center flex-column py-3">
-               
+
                 <p class="md_title w-75">
                     We Boost Our Clients' Bottom Line by Optimizing Their Growth Potential
                 </p>
-               
+
                 <p class="md_sub-title w-75">
                     quisque aliquet, libero consequat
                     elementum convallis, erat imperdiet
@@ -32,6 +32,7 @@
 
 <style scoped lang="scss">
 @use "../style/partial/variables" as *;
+
 img {
     width: 600px;
 }
@@ -45,7 +46,10 @@ img {
 }
 
 .ms_button {
-      background-color:$color-orange;
-    }
+    background-color: $orange-color;
+}
 
+.ms_button:hover {
+    background-color: $orange-btn-hover ;
+}
 </style>
