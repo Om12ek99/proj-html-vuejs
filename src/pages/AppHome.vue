@@ -41,8 +41,11 @@ export default {
     <AppClientBoost/>
     <AppValue/>
     <AppAboutAwards/>
-    <AppQuote/>
+    <AppQuote class="quote"/>
     <AppMarketing/>
 </template>
 <style scoped lang="scss">
+.quote{
+    margin-top: 10rem;
+}
 </style>
