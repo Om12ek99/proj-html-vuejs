@@ -30,11 +30,7 @@ export default {
             
             <!-- logo -->
             <a class="navbar-brand" href="#">
-<<<<<<< HEAD
                 <img src="../assets/img/logo-img-avada.png" alt="">
-=======
-                <img class="ms_logo" src="../assets/img/logo-img-avada.jpg" alt="">
->>>>>>> 5d785cae040e2e968363c9f8b3f1d293b88c59ea
             </a>
             <!-- /logo -->
 
