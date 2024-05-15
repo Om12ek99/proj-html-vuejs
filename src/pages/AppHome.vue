@@ -8,6 +8,7 @@ import AppValue from "../components/HomeComponents/AppValue.vue";
 import AppAboutAwards    from "../components/AppAboutAwards.vue";
 import AppQuote from "../components/HomeComponents/AppQuote.vue";
 import AppMarketing from "../components/HomeComponents/AppMarketing.vue";
+import AppListMarketing from "../components/HomeComponents/AppListMarketing.vue";
 
 
 
@@ -24,6 +25,7 @@ export default {
         AppAboutAwards,
         AppQuote,
         AppMarketing,
+        AppListMarketing,
     },
     data(){
         return {
@@ -43,9 +45,13 @@ export default {
     <AppAboutAwards/>
     <AppQuote class="quote"/>
     <AppMarketing/>
+    <AppListMarketing class="marketingcard"/>
 </template>
 <style scoped lang="scss">
 .quote{
     margin-top: 10rem;
+}
+.marketingcard{
+    margin-top: 4rem;
 }
 </style>
