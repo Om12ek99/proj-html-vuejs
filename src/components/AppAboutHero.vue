@@ -41,4 +41,8 @@
     .ms_button {
       background-color:$orange-color;
     }
+
+    .ms_button:hover {
+        background-color:$orange-btn-hover ;
+    }
 </style>
