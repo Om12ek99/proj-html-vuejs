@@ -6,6 +6,7 @@ import AppAboutSuccesful from "../components/AppAboutSuccesful.vue";
 import AppAboutWeBoost   from "../components/AppAboutWeBoost.vue";
 import AppAboutAwards    from "../components/AppAboutAwards.vue";
 import AppAboutWeAreTrue from "../components/AppAboutWeAreTrue.vue";
+import AppAboutAbstract       from "../components/AppAboutAbstract.vue";
 export default {
     components: {
       AppAboutHero,
@@ -14,7 +15,8 @@ export default {
       AppAboutSuccesful,
       AppAboutWeBoost,
       AppAboutAwards,
-      AppAboutWeAreTrue
+      AppAboutWeAreTrue,
+      AppAboutAbstract
     },
     data () {
       return {
@@ -87,5 +89,9 @@ export default {
   <!-- About Section We Are True -->
   <AppAboutWeAreTrue />
   <!-- /About Section We Are True -->
+
+  <!-- About Section Abstract -->
+  <AppAboutAbstract />
+  <!-- /About Section Abstract -->
 </template>
   
