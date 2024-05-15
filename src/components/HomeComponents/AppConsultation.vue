@@ -16,7 +16,7 @@ export default {
             },    //object con i contentunti della prima riga
                 
                 
-                InvestorArray:{                 //object con i contentunti della seconda riga
+                InvestorArray:{                 
                     intest:"Investors In People",
                     title:"In-House Sales Training",
                     text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.",

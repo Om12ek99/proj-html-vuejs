@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     getImage(image) {
-      return require(`@/${image}`);                             // Utilizzo di require 
+      return new URL(`../assets/img/${image}`, import.meta.url).href                          // Utilizzo di require 
     }
   }
 }

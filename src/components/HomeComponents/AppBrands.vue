@@ -2,7 +2,7 @@
 import AppConsultantSingle from './AppConsultantSingle.vue';
 export default {    
     components:
-    AppConsultantSingle,
+    {AppConsultantSingle},
     data(){
         return {
             brandImages: [                                                  //object contenente le icone
@@ -48,6 +48,7 @@ export default {
                 <img :src="brand.src" alt="">
             </div>
         </div>
+
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
             <AppConsultantSingle/>
