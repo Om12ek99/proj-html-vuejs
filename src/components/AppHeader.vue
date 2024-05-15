@@ -29,7 +29,7 @@ export default {
             
             <!-- logo -->
             <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo-img-avada.jpg" alt="">
+                <img src="../assets/img/logo-img-avada.png" alt="">
             </a>
             <!-- /logo -->
 
