@@ -58,7 +58,7 @@ export default {
         li:hover {
             border-bottom: 3px solid$orange-color ;
             
-            a:hover {            
+            a {            
                 color:$orange-color;
             }
            
