@@ -1,4 +1,4 @@
-//ricordati di importare AppForm.vue
+
 
 <script>
 import AppForm from "../HomeComponents/AppForm.vue"
