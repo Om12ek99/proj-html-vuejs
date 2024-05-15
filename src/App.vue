@@ -20,10 +20,11 @@ export default {
     <AppHeader />
     <!-- /Header  -->
 
-    
+    <!-- dove inseriamo tutti i componenti della pagina -->
     <router-view></router-view>
-
-    <!-- Footer -->
+    <!-- dove inseriamo tutti i componenti della pagina -->
+    
+     <!-- Footer -->
     <AppFooter />
     <!-- /Footer -->
 

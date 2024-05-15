@@ -2,19 +2,22 @@
 export default {
     data() {
         return {
-            activeIndex:false,
+           
             menu: [
                 {
                     title: "Home",
-                    routeName: "home"
+                    routeName: "home",
+                    
                 },
                 {
                     title: "About",
-                    routeName: "about"
+                    routeName: "about",
+                    
                 },
                 {
                     title: "Free Quote",
-                    routeName: "Free Quote"
+                    routeName: "Free Quote",
+                    
                 },
 
             ]
@@ -36,8 +39,16 @@ export default {
 
             <ul class="ms_navigation d-flex gap-5 fs-3 " >
                 <li v-for="curLink in menu" class="py-3" >
+                    <!-- :to è il nome della rotta -->
+                    <!-- 
+                        la classe nav-link crea automaticamente
+                        la calsse router-link-active quando selezioniamo
+                        il componete interessato.
+                        possiamo stilizzare a nostro piacimento questa classe
+                        tramite lo stile css
+                    -->
                     <router-link 
-                     :class="[activeIndex=true]"
+                     class="nav-link"
                      :to="{name: curLink.routeName}">
                      {{ curLink.title }}
                     </router-link>
@@ -66,7 +77,9 @@ export default {
         
     }
 
-    
+    .router-link-active {
+        color:$orange-color;
+    }
    
 
 </style>
