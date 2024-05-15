@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            activeIndex:false,
             menu: [
                 {
                     title: "Home",
@@ -33,9 +34,10 @@ export default {
             </a>
             <!-- /logo -->
 
-            <ul class="ms_navigation d-flex gap-5 fs-3" >
-                <li v-for="curLink in menu" >
+            <ul class="ms_navigation d-flex gap-5 fs-3 " >
+                <li v-for="curLink in menu" class="py-3" >
                     <router-link 
+                     :class="[activeIndex=true]"
                      :to="{name: curLink.routeName}">
                      {{ curLink.title }}
                     </router-link>
@@ -53,11 +55,14 @@ export default {
     ul {
         list-style-type: none;
 
-        a:hover {
+        li:hover {
+            border-bottom: 3px solid $color-orange ;
             
-            color:#f86011;
+            a:hover {            
+                color:$color-orange;
+            }
+           
         }
-       
         
     }
 
