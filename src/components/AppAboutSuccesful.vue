@@ -15,7 +15,7 @@ export default {
     <div class="md_card text-center">
         <h1>{{ title }}</h1>
         <h2>{{ subTitle }}</h2>
-         <p>{{ paragraf }}</p>
+        <p> {{ paragraf }}</p>
     </div>
 </template>
 

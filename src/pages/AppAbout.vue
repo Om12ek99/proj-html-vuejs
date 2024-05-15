@@ -68,9 +68,9 @@ export default {
     <div class="row">
       <div class="col" v-for="curCard in succesArray">
         <AppAboutSuccesful  
-          :title="curCard.title"
-          :subTitle="curCard.subTitle"
-          :paragraf="curCard.paragraf"
+          :title    ="curCard.title"
+          :subTitle ="curCard.subTitle"
+          :paragraf ="curCard.paragraf"
         />
       </div>
     </div>

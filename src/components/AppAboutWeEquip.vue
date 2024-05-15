@@ -4,20 +4,36 @@ export default {
         return {
             listArray: [
                 {                   
-                    text  : "Costumer Service",
+                    text    : "Costumer Service",
+                    parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
+                    visible : false
                     
                 },
                 {                    
-                    text  : "Online Consultation",
+                    text    : "Online Consultation",
+                    parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
+                    visible : false
                     
                 },
                 {                  
-                    text  : "Sales Management",
+                    text    : "Sales Management",
+                    parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
+                    visible : false
                    
                 },
 
             ],
+            
+               
         }
+    },
+    methods: {
+        showParagr(index) {
+            console.log("ciao");
+            this.listArray[index].visible = !this.listArray[index].visible
+                  
+        },
+      
     }
 
 }
@@ -28,22 +44,24 @@ export default {
         <div class="row">
             <div class="col">
                 <div>
-                    <p>
+                    <p class="ms_title">
                         We Equip Leaders with Strategy and
                         vision
                     </p>
 
                     <ul>
-                        <li v-for="curList in listArray">
-                            <button class="border border-0 bg-lighte">
-                                <i class="fa-solid fa-plus"></i>
+                        <li v-for="(curList, index ) in listArray" class="d-flex " :key="index">
+                            <button @click="showParagr(index)"  class="border border-0 ms_btn">                               
+                               <span class="ms_icons">{{ curList.visible ? "-" : "+" }}</span> 
                             </button>
-                            {{ curList.text }}   
-                            <div class="ms_paragraf d-none">
-                                 Atque doloribus quasi corporis impedit incidunt 
-                                 tenetur obcaecati nostrum ipsum blanditiis quo sapiente eos, 
-                                 quam aliquid nam, eveniet voluptatem quisquam
+                         
+                            <div>
+                                <h3 class="px-4 py-3 ">{{ curList.text }}</h3>
+                                    <div class="ms_paragraf" v-if="curList.visible">
+                                        <p class="ms_par-text">{{ curList.parText }}</p>
+                                    </div>
                             </div>
+                            
                         </li>
                        
                     </ul>
@@ -58,18 +76,35 @@ export default {
     </div>
 </template>
 
-<style scoped leng="scss" > 
+<style scoped lang="scss" > 
 @use "../style/partial/variables" as *;
-  p {
+  .ms_title {
     font-size: 3.5rem;
   }
 
   ul {
     list-style-type: none;
   }
+  li {
+     
+    
+      .ms_btn {
+        background-color: white;
+        .ms_icons{
+          font-size: 1.5rem;
+          
+         
+        }
+  }
+ 
+  }
+  
+  .ms_icons:hover {
+    color:$orange-color;   
+  }
 
-  i:hover {
-    color:#f86011 ; 
+  .ms_par-text {
+    font-size: 1.5rem;
   }
   
 </style>
