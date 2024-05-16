@@ -1,9 +1,6 @@
 <script>
-import AppConsultationCards from './AppConsultationCards.vue';
 export default {
-  components: {
-    AppConsultationCards,
-  },
+  
   data() {
     return {
       ConsultantArray: {

@@ -29,6 +29,7 @@ export default{
                 <img class="rounded" src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/we-boost-our-clients-1200x1098.jpg" alt="">
             </div>
         </div>
+        <AppClientBoostBuild/>
     </div>
 
 </template>
