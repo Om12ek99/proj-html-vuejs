@@ -41,7 +41,7 @@ export default {
 <template>
   <div class="container">
     <!-- Itera sugli oggetti dell'array ConsultantArray -->
-    <div class="row" v-for="(card, index) in ConsultantArray" :key="index"> 
+    <div class="row " v-for="(card, index) in ConsultantArray" :key="index"> 
       <div class="section d-flex" :class="{ 'flex-row-reverse': index === 'InvestorArray' }">
         <div class="col">
           <img :src="card.image" alt="Card Image">
