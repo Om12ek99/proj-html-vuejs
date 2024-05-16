@@ -70,7 +70,7 @@ export default {
   <!-- /About Section We Equip  -->
 
   <!-- About Section Succesful -->
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <div class="col" v-for="curCard in succesArray">
         <AppAboutSuccesful 
