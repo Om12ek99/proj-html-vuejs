@@ -3,10 +3,11 @@ export default {
     data() {
         return {
 
-        }
-    }
-}
+        };
+    },
+};
 </script>
+
 <template>
     <div class="container">
         <div class="row">
@@ -21,18 +22,17 @@ export default {
                     <h4>Kate Schadler</h4>
                     <h6>Marketing Consultant – Abstract</h6>
                 </div>
-
             </div>
         </div>
     </div>
 </template>
+
 <style scoped lang="scss">
-img{
+img {
     width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .text {
     padding: 5rem;

@@ -1,3 +1,12 @@
+<template>
+    <div class="md_card">
+        <img :src="image" alt="Card Image">
+        <h2 class="text mt-3 mb-5">{{ text }}</h2>
+        <h2 class="data">{{ data }}</h2>
+        <h5>{{ paragraf }}</h5>
+    </div>
+</template>
+
 <script>
 export default {
     props: {
@@ -9,18 +18,11 @@ export default {
     data() {
         return {
 
-        }
+        };
     }
-}
+};
 </script>
-<template>
-    <div class="md_card">
-        <img :src="image" alt="Card Image">
-        <h2 class="text mt-3 mb-5">{{ text }}</h2>
-        <h2 class="data">{{ data }}</h2>
-        <h5>{{ paragraf }}</h5>
-    </div>
-</template>
+
 <style scoped lang="scss">
 img {
     width: 95%;

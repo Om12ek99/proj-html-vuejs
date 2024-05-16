@@ -1,17 +1,18 @@
 <script>
-import AppForm from "../HomeComponents/AppForm.vue"
+import AppForm from "../HomeComponents/AppForm.vue";
+
 export default {
     components: {
         AppForm,
     },
-
     data() {
         return {
 
-        }
+        };
     }
-}
+};
 </script>
+
 <template>
     <div class="wrapper">
         <div class="container py-5">
@@ -19,40 +20,32 @@ export default {
                 <div class="col">
                     <div class="text">
                         <h1>Unlock Your Online Growth Potential</h1>
-                        <h3>Online Marketing to secure customer retention, leads, and sales. We focus on the bigger
-                            picture.
-                        </h3>
+                        <h3>Online Marketing to secure customer retention, leads, and sales. We focus on the bigger picture.</h3>
                         <br>
                     </div>
                     <a href="#" class="w-75 py-3 text-center">
-                        <button type="button" class="btn ms_button  py-2 px-4 fs-5">
+                        <button type="button" class="btn ms_button py-2 px-4 fs-5">
                             Our Services
                         </button>
                     </a>
-
                 </div>
-        
- 
                 <div class="col">
                     <AppForm class="form" />
                 </div>
-                <!-- //NB ricordarti di mettere l'icona della freccia! -->
+                <!-- NB: ricordati di mettere l'icona della freccia! -->
             </div>
-
-            <!-- //Qui ci va il form che Valerio fa -->
-
+            <!-- Qui ci va il form che Valerio fa -->
         </div>
-
     </div>
-
-
 </template>
+
 <style scoped lang="scss">
 .wrapper {
     background-image: url("https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/marketing-intro.jpg");
     object-fit: fill;
     height: 725px;
 }
+
 .ms_button {
     background-color: white;
     color: black;
@@ -60,6 +53,7 @@ export default {
     border: 1px solid black;
     padding: 1rem 2rem;
     border-radius: 10px;
+
     i {
         margin-left: 1rem;
     }
@@ -70,6 +64,7 @@ export default {
         border-color: white;
     }
 }
+
 .text {
     color: white;
 
@@ -77,9 +72,9 @@ export default {
         margin-top: 7rem;
         font-size: 4.5rem;
     }
-
 }
-.form{
+
+.form {
     margin-top: 6rem;
 }
 </style>

@@ -1,40 +1,3 @@
-<script>
-import AppConsultantSingle from './AppConsultantSingle.vue';
-export default {
-    components:
-        { AppConsultantSingle },
-    data() {
-        return {
-            brandImages: [                                                  //object contenente le icone
-                {
-                    src: "src/assets/img/brands/abstract.webp",              //link delle icone
-                    title: "abstract"                                        //nome delle icone
-                },
-                {
-                    src: "src/assets/img/brands/cglobal.webp",
-                    title: "cglobal"
-                },
-                {
-                    src: "src/assets/img/brands/digitalbox.webp",
-                    title: "digitalbox"
-                },
-                {
-                    src: "src/assets/img/brands/hemisferio.webp",
-                    title: "hemisferio"
-                },
-                {
-                    src: "src/assets/img/brands/next.webp",
-                    title: "next"
-                },
-                {
-                    src: "src/assets/img/brands/spaces.webp",
-                    title: "spaces"
-                }
-            ]
-        }
-    }
-}
-</script>
 <template>
     <div class="container">
         <div class="row">
@@ -52,14 +15,33 @@ export default {
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
             <AppConsultantSingle class="single"/>
-
         </div>
     </div>
 </template>
+
+<script>
+import AppConsultantSingle from './AppConsultantSingle.vue';
+
+export default {
+    components: { AppConsultantSingle },
+    data() {
+        return {
+            brandImages: [                                                  // object contenente le icone
+                { src: "src/assets/img/brands/abstract.webp", title: "abstract" },              // link delle icone
+                { src: "src/assets/img/brands/cglobal.webp", title: "cglobal" },
+                { src: "src/assets/img/brands/digitalbox.webp", title: "digitalbox" },
+                { src: "src/assets/img/brands/hemisferio.webp", title: "hemisferio" },
+                { src: "src/assets/img/brands/next.webp", title: "next" },
+                { src: "src/assets/img/brands/spaces.webp", title: "spaces" }
+            ]
+        };
+    }
+};
+</script>
+
 <style scoped lang="scss">
 .container {
-
-    //eventualmente da modificare con bootrstrap
+    // eventualmente da modificare con bootrstrap
     .row:first-child {
         text-align: center;
         margin-top: 2rem;
@@ -70,7 +52,8 @@ export default {
 img {
     width: 150px;
 }
-.single{
+
+.single {
     margin-top: 150px;
     margin-bottom: 100px;
 }

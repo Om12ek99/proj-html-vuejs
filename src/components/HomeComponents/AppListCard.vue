@@ -1,5 +1,6 @@
 <script>
-import AppCardStaff from "../HomeComponents/AppCardStaff.vue"
+import AppCardStaff from "../HomeComponents/AppCardStaff.vue";
+
 export default {
   components: {
     AppCardStaff,
@@ -26,10 +27,11 @@ export default {
           paragraf: "Partnership with Avada Consultant",
         },
       ],
-    }
-  }
-}
+    };
+  },
+};
 </script>
+
 <template>
   <div class="container">
     <div class="row text-center mt-5 mb-5">
@@ -42,7 +44,7 @@ export default {
     </div>
     <div class="row d-flex justify-content-center">
       <a href="#" class="w-75 py-3 text-center">
-        <button type="button" class="btn ms_button text-light ">
+        <button type="button" class="btn ms_button text-light">
           Read more case studies
         </button>
       </a>
@@ -61,7 +63,7 @@ export default {
   margin-top: 4.5rem;
   padding: 0.8rem 2.3rem;
   border-radius: 12px;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .ms_button:hover {
