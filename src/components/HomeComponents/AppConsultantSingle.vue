@@ -25,7 +25,11 @@ export default {
     <h2>Drive Leads and Sales with Avada</h2>
   </div>
   <div class="col-2 d-flex justify-content-end align-items-center button">
-    <button>555555s555555</button>
+    <a href="#" class="text-right">
+                    <button type="button" class="btn ms_button  py-2">
+                      <i class="fa-solid fa-phone"></i>555555
+                    </button>
+                </a>
   </div>
     </div>
     
@@ -68,6 +72,21 @@ h2{
 }
 .button{
   padding-right: 3rem;
+  .ms_button {
+    background-color: #feefe7;
+    font-size: 25px;
+    width: 10rem;
+    color: #f86011;
+
+    i {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: #f86011; // Arancione scuro
+      color: white; // Testo bianco
+    }
+  }
 }
 
 </style>
