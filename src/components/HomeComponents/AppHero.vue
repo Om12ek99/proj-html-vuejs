@@ -31,11 +31,7 @@ export default {
                     </a>
 
                 </div>
-                <a href="#" class="w-75 py-3 text-center">
-        <button type="button" class="btn ms_button fs-5">
-            Our Services<i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </a>
+        
  
                 <div class="col">
                     <AppForm />

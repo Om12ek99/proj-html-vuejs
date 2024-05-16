@@ -51,11 +51,8 @@ export default {
 
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
-<<<<<<< HEAD
             <AppConsultantSingle class="single"/>
-=======
-            <AppConsultantSingle />
->>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
+
         </div>
     </div>
 </template>
