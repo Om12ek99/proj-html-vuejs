@@ -10,8 +10,8 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <img src="../assets/img/large-testimonial.jpg" alt="">
+            <div class="col d-flex justify-content-end">
+                <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/large-testimonial.jpg" alt="">
             </div>
             <div class="col">
                 <div class="text">
@@ -26,6 +26,11 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
+img{
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .text{
     padding: 5rem;
     width: 80%;

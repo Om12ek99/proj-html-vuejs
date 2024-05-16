@@ -9,7 +9,8 @@ export default {
 }
 </script>
 <template>
-    <div class="container">
+    <div class="wrapper">
+        <div class="container">
         <div class="row">
             <div class="col">
                 <h1>Marketing Resources: Insider Advice on How to Increase Online Sales</h1>
@@ -23,6 +24,8 @@ export default {
             </div>
         </div>
     </div>
+    </div>
+    
 </template>
 
 <style scoped lang="scss">

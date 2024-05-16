@@ -46,16 +46,21 @@ export default {
     <AppValue/>
     <AppAboutAwards/>
     <AppQuote class="quote"/>
-    <AppMarketing/>
+    <AppMarketing class="marketing"/>
     <AppListMarketing class="marketingcard"/>
     <AppContactInfo class="contactinfo"/>
 </template>
 <style scoped lang="scss">
 .quote{
     margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .marketingcard{
-    margin-top: 4rem;
+    padding-top: 5rem;
+}
+.marketing{
+    background-color: #F6F6F8;
+    padding-top: 10rem;
 }
 .hero{
     margin-top: 4rem;

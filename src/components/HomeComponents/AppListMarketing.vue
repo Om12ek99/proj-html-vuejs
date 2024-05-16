@@ -26,6 +26,7 @@ export default {
 }
 </script>
 <template>
+  <div class="wrapper">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-4" v-for="(item, index) in ListMarketingArray" :key="index">
@@ -33,10 +34,15 @@ export default {
       </div>
     </div>
   </div>
+
+  </div>
+
 </template>
 
 <style scoped lang="scss">
-
+.wrapper{
+  background-color: #F6F6F8;
+}
 
 
 </style>
