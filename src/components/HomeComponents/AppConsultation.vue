@@ -43,31 +43,50 @@ export default {
 }       // fine del export default
 </script>
 <template>
-    <div class="container">
-      <!-- Itera sugli oggetti dell'array ConsultantArray -->
-      <div class="row" v-for="(card, index) in ConsultantArray" :key="index">
-        <!-- Mostra i contenuti dell'oggetto corrente -->
+  <div class="container">
+    <!-- Itera sugli oggetti dell'array ConsultantArray -->
+    <div class="row" v-for="(card, index) in ConsultantArray" :key="index">
+      <!-- Se l'indice è dispari, inverti solo l'ordine di testo e immagine -->
+      <template v-if="index % 2 !== 0">
+        <div class="col">
+          <div class="text">
+            <h5>{{ card.intest }}</h5>
+            <h1>{{ card.title }}</h1>
+            <br>
+            <p>{{ card.text }}</p>
+            <br>
+            <button type="button" class="btn ms_button text-light">
+              {{ card.buttontext }}
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <img :src="card.image" alt="Card Image">
+        </div>
+      </template>
+      <!-- Se l'indice è pari, mantieni l'ordine normale -->
+      <template v-else>
         <div class="col">
           <img :src="card.image" alt="Card Image">
         </div>
         <div class="col">
           <div class="text">
             <h5>{{ card.intest }}</h5>
-          <h1>{{ card.title }}</h1>
-          <br>
-          <p>{{ card.text }}</p>
-          <br>
-          <button type="button" class="btn ms_button text-light ">
-            {{ card.buttontext }}
-                    </button>
-            
+            <h1>{{ card.title }}</h1>
+            <br>
+            <p>{{ card.text }}</p>
+            <br>
+            <button type="button" class="btn ms_button text-light">
+              {{ card.buttontext }}
+            </button>
           </div>
-          
         </div>
-      </div>
-      <div class="spacer"></div>
+      </template>
     </div>
-  </template>
+    <div class="spacer"></div>
+  </div>
+</template>
+
   
 <style scoped lang="scss">
     .spacer {
