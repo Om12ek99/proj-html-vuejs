@@ -12,16 +12,20 @@ export default {
 </script>
 
 <template>
-    <div class="md_card text-center">
-        
-            <img :src="icons" alt="" class="img-fluid w-25">
-        
-        <h1>{{ title }}</h1>
+    <div class="md_card text-center">        
+        <img :src="icons" alt="" class="img-fluid">        
+        <div class="md_title">{{ title }}</div>
         <h2>{{ subTitle }}</h2>
         <p class="fw-semibold"> {{ paragraf }}</p>
     </div>
 </template>
 
 <style scoped lang="scss">
-   
+   .md_title{
+    font-size: 4rem;
+   }
+
+   img {
+    width: 40px;
+   }
 </style>

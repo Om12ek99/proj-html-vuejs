@@ -4,19 +4,19 @@ export default {
         return {
             listArray: [
                 {                   
-                    text    : "Costumer Service",
+                    title    : "Costumer Service",
                     parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
                     visible : false
                     
                 },
                 {                    
-                    text    : "Online Consultation",
+                    title    : "Online Consultation",
                     parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
                     visible : false
                     
                 },
                 {                  
-                    text    : "Sales Management",
+                    title    : "Sales Management",
                     parText : "Dolor sit amet consectetur adipisicing elit. Ad sunt error debitis impedi doloribus ",
                     visible : false
                    
@@ -50,20 +50,19 @@ export default {
                     </p>
                     
                     <ul>
-                        <li v-for="(curList, index ) in listArray"  :key="index">
+                        <li v-for="(curList, index ) in listArray">
                             <div class="d-flex py-2">
                                 <button @click="showParagr(index)"  class="border border-0 ms_btn">   
                                     <i class="fa-solid fa-plus" v-if="!curList.visible"></i>                            
-                                    <i class="fa-solid fa-minus" v-else></i>                                                           
+                                    <i class="fa-solid fa-minus"v-else></i>                                                           
                                 </button>
-
-                                <h3 class="px-5">{{ curList.text }}</h3>
+                                <h3 class="px-5">{{ curList.title }}</h3>
                             </div>
                            
                             
                             <div>                                   
                                 <div class="ms_paragraf px-5" v-if="curList.visible">
-                                        <p class="ms_par-text px-4">{{ curList.parText }}</p>
+                                    <p class="ms_par-text px-4">{{ curList.parText }}</p>
                                 </div>
                             </div>
                             
