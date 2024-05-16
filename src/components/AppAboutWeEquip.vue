@@ -50,7 +50,7 @@ export default {
                     </p>
                     
                     <ul>
-                        <li v-for="(curList, index ) in listArray"  :key="index">
+                        <li v-for="(curList, index ) in listArray">
                             <div class="d-flex py-2">
                                 <button @click="showParagr(index)"  class="border border-0 ms_btn">   
                                     <i class="fa-solid fa-plus" v-if="!curList.visible"></i>                            
