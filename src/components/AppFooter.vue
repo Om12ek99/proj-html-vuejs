@@ -96,9 +96,9 @@ export default {
           </ul>
         </div>
         <!-- GRUPPO LINK A LISTE  -->
+        
+        <!-- LISTA SERVIZI -->
         <div class="col">
-          <!-- LISTA SERVIZI -->
-
           <h4 class="fw-medium fs-2">Services</h4>
           <ul class="list-unstyled">
             <li v-for="curSer in serviceList">
@@ -107,9 +107,10 @@ export default {
               </a>
             </li>
           </ul>
-
         </div>
-        <!-- LISTA RISORSE -->
+       <!-- LISTA SERVIZI -->
+      
+       <!-- LISTA RISORSE -->
         <div class="col">
           <h4 class="fw-medium fs-2">Resources</h4>
           <ul class="list-unstyled">
@@ -118,9 +119,10 @@ export default {
                 <AppListFooter :liText="curRes.contLi" />
               </a>
             </li>
-
           </ul>
         </div>
+        <!-- LISTA RISORSE -->
+        
         <!-- LISTA COMPANY -->
         <div class="col">
           <h4 class="fw-medium fs-2">Company</h4>
@@ -133,6 +135,7 @@ export default {
 
           </ul>
         </div>
+         <!-- /LISTA COMPANY -->
       </div>
     </div>
     <!-- FOOTER CREDITS NUMERO MAIL CREATED  -->
