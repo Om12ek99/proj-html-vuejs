@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>    
-    <li class="fs-5 py-3">{{ liText }}</li>
+    <li class="fs-6 py-3">{{ liText }}</li>
 </template>
 
 <style scoped lang="scss">
