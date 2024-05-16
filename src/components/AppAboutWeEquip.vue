@@ -27,13 +27,13 @@ export default {
                
         }
     },
-    methods: {
-        showParagr(index) {
-            console.log("ciao");
-            this.listArray[index].visible = !this.listArray[index].visible
-                  
+    methods: {               
+        showParagr(index) {                    
+            this.listArray[index].visible = !this.listArray[index].visible        
         },
-      
+        
+        // metodo che al click inverte lo stato della chiave visible da false a true 
+        // accetta un indice come parametro che rappresenta l'indice dell'array listArrar
     }
 
 }
@@ -50,7 +50,9 @@ export default {
                     </p>
                     
                     <ul>
+                        <!-- li stampato dinamicamente con v-for -->
                         <li v-for="(curList, index ) in listArray">
+                            
                             <div class="d-flex py-2">
                                 <button @click="showParagr(index)"  class="border border-0 ms_btn">   
                                     <i class="fa-solid fa-plus" v-if="!curList.visible"></i>                            
@@ -59,7 +61,6 @@ export default {
                                 <h3 class="px-5">{{ curList.title }}</h3>
                             </div>
                            
-                            
                             <div>                                   
                                 <div class="ms_paragraf px-5" v-if="curList.visible">
                                     <p class="ms_par-text px-4">{{ curList.parText }}</p>
@@ -67,7 +68,7 @@ export default {
                             </div>
                             
                         </li>
-                       
+                        <!-- /li stampato dinamicamente con v-for -->
                     </ul>
                 </div>
             </div>
