@@ -34,7 +34,7 @@ export default {
         
  
                 <div class="col">
-                    <AppForm />
+                    <AppForm class="form" />
                 </div>
                 <!-- //NB ricordarti di mettere l'icona della freccia! -->
             </div>
@@ -78,5 +78,8 @@ export default {
         font-size: 4.5rem;
     }
 
+}
+.form{
+    margin-top: 6rem;
 }
 </style>
