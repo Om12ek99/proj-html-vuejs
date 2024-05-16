@@ -1,9 +1,79 @@
 <script>
-export default {
+import AppListFooter from "./AppListFooter.vue"
 
+export default {
+  components: {
+    AppListFooter
+  },
   data() {
     return {
+      listIcons: [
+        {
+          icons: "fab fa-facebook-f",
+        },
+        {
+          icons: "fa-brands fa-x-twitter",
+        },
+        {
+          icons: "fab fa-instagram",
+        },
+        {
+          icons: "fa-brands fa-youtube",
+        },
+        {
+          icons: "fab fa-linkedin-in",
+        },
+        {
+          icons: "fa-brands fa-tiktok",
+        },
+      ],
+      serviceList: [
+        {
+          contLi: "Marketing Plan",
+        },
+        {
+          contLi: "Sales Development",
+        },
+        {
+          contLi: "Digital Marketing",
+        },
+        {
+          contLi: "Pricing",
+        },
+        {
+          contLi: "Why Us",
+        },
+        {
+          contLi: "Case Studies",
+        },
+      ],
 
+      resourcesList: [
+        {
+          contLi: "Learning Center"
+        },
+        {
+          contLi: "Video Tutorials"
+        },
+        {
+          contLi: "Customers"
+        },
+        {
+          contLi: "Blog"
+        },
+      ],
+
+      companyList: [
+        {
+          contLi: "Who We Are"
+        },
+        {
+          contLi: "Contact Us"
+        },
+        {
+          contLi: "Careers"
+        },
+      ],
     }
 
   }
@@ -12,49 +82,55 @@ export default {
 </script>
 <template>
   <!-- FOOTER -->
-  <footer class="site-footer py-5">
-    <div class="container py-5">
-      <div class="row py-5">
-        <div class="col-lg-3">
+  <footer class="py-5 ">
+    <div class="container">
+      <div class="row  gap-5">
+        <div class="col px-5">
           <!-- TITOLO -->
-          <h3>Grow Your Online Business Strategically, and Improve Customer Retention</h3>
           <!-- LISTA CHE RIUNISCE LE ICONE  -->
-          <ul class="list-unstyled social-icon mb-0">
-            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <h2>Grow Your Online Business Strategically, and Improve Customer Retention</h2>
+          <ul class="d-flex gap-3 list-unstyled py-3">
+            <li class="fs-3" v-for="curIcon in listIcons">
+              <a href="#"><i :class="curIcon.icons"></i></a>
+            </li>
           </ul>
         </div>
         <!-- GRUPPO LINK A LISTE  -->
-        <div class="col-lg-3 mb-5 mb-lg-0">
+        <div class="col">
           <!-- LISTA SERVIZI -->
-          <h5>Services</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Marketing Plan</a></li>
-            <li><a href="#">Sales Development</a></li>
-            <li><a href="#">Digital Marketing</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Why Us</a></li>
+
+          <h4 class="fw-medium fs-2">Services</h4>
+          <ul class="list-unstyled">
+            <li v-for="curSer in serviceList">
+              <a href="">
+                <AppListFooter :liText="curSer.contLi" />
+              </a>
+            </li>
           </ul>
+
         </div>
         <!-- LISTA RISORSE -->
-        <div class="col-lg-3 mb-5 mb-lg-0">
-          <h5>Resources</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Learning center</a></li>
-            <li><a href="#">Video Tutorial</a></li>
-            <li><a href="#">Customer</a></li>
-            <li><a href="#">Blog</a></li>
+        <div class="col">
+          <h4 class="fw-medium fs-2">Resources</h4>
+          <ul class="list-unstyled">
+            <li v-for="curRes in resourcesList">
+              <a href="">
+                <AppListFooter :liText="curRes.contLi" />
+              </a>
+            </li>
+
           </ul>
         </div>
         <!-- LISTA COMPANY -->
-        <div class="col-lg-3 mb-5 mb-lg-0">
-          <h5>Company</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Careers</a></li>
+        <div class="col">
+          <h4 class="fw-medium fs-2">Company</h4>
+          <ul class="list-unstyled">
+            <li v-for="curCom in companyList">
+              <a href="#">
+                <AppListFooter :liText="curCom.contLi" />
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -82,8 +158,9 @@ export default {
   </footer>
 </template>
 <style scoped lang="scss">
-a:hover {
-
-  color: #f86011;
+ul {
+  list-style-type: none;
 }
+
+a:hover {}
 </style>
