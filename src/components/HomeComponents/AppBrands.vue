@@ -51,7 +51,7 @@ export default {
 
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
-            <AppConsultantSingle/>
+            <AppConsultantSingle class="single"/>
         </div>
     </div>
 </template>
@@ -65,5 +65,8 @@ export default {
 }
 img{
     width: 150px;
+}
+.single{
+    margin-top: 150px;
 }
 </style>

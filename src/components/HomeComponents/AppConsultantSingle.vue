@@ -27,7 +27,7 @@ export default {
   <div class="col-2 d-flex justify-content-end align-items-center button">
     <a href="#" class="text-right">
                     <button type="button" class="btn ms_button  py-2">
-                      <i class="fa-solid fa-phone"></i>555555
+                      <i class="fa-solid fa-phone"></i>351-4034568
                     </button>
                 </a>
   </div>
@@ -74,8 +74,8 @@ h2{
   padding-right: 3rem;
   .ms_button {
     background-color: #feefe7;
-    font-size: 25px;
-    width: 10rem;
+    font-size: 20px;
+    width: 15rem;
     color: #f86011;
 
     i {
@@ -83,8 +83,8 @@ h2{
     }
 
     &:hover {
-      background-color: #f86011; // Arancione scuro
-      color: white; // Testo bianco
+      background-color: #f86011; 
+      color: white; 
     }
   }
 }
