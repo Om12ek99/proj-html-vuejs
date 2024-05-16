@@ -26,8 +26,8 @@ export default {
                 <br>
                 </div>
                 <a href="#" class="w-75 py-3 text-center">
-        <button type="button" class="btn ms_button  py-2 px-4 fs-5">
-          Our Services
+        <button type="button" class="btn ms_button fs-5">
+            Our Services<i class="fa-solid fa-arrow-right"></i>
         </button>
       </a>
  
@@ -53,12 +53,22 @@ export default {
     height: 725px;
 }
 .ms_button {
-      background-color:white;
-      color: black;
-      font-size: 10px;
-      border: 1px solid black;
-
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    i {
+        margin-left: 1rem;
     }
+
+    &:hover {
+        background-color: transparent;
+        color: white;
+        border-color: white;
+    }
+}
     .text{
         color: white;
         h1{
