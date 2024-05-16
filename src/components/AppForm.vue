@@ -14,7 +14,7 @@ export default {
 
    
       
-        <div class="card">
+        <div class="card" >
           <div class="card-body">
             <form>
               <div class="form-grou py-2">

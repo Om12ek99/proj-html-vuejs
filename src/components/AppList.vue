@@ -2,66 +2,115 @@
 export default {
   data() {
     return {
-      items: [
+      listArray: [
         {
-          title: 'Item 1',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          open: false,
+          text: "Vivamus id ante vel purus commodo cursus? Nunc sit amet cursus massa?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit. ",
+          visible: false,
         },
         {
-          title: 'Item 2',
-          content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          open: false,
+          text: "Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit.",
+          visible: false,
         },
         {
-          title: 'Item 3',
-          content: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-          open: false,
+          text: "Mauris porta interdum risus, at scelerisque ante faucibus porttitor erat sit?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit. ",
+          visible: false,
+        },
+        {
+          text: "Suspendisse sed ligula sed est ornare gravida varius natoque magnis?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit. ",
+          visible: false,
+        },
+        {
+          text: "Curabitur ornare felis sit amet neque volutpat, porta lobortis elit rutrum?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit. ",
+          visible: false,
+        },
+        {
+          text: "Praesent posuere nisi risus auctor posuere? Etiam auctor laoreet magna?",
+          parText:
+            "Suspendisse consectetur, est sed lobortis dictum, turpis orci finibus felis, mattis tempus ex dui ac diam. Etiam dictum turpis tempor, bibendum lacus eget, ullamcorper eros. Proin vitae viverra metus. In sed risus vehicula, tincidunt sem vel, dignissim orci. Cras porttitor erat sit amet nisl fermentum, at pharetra lorem blandit. ",
+          visible: false,
         },
       ],
     };
   },
   methods: {
-    toggleAccordion(index) {
-      this.items[index].open = !this.items[index].open;
+    showParagr(index) {
+      console.log("ciao");
+      this.listArray[index].visible = !this.listArray[index].visible;
     },
   },
 };
 </script>
 
-
 <template>
-  <div>
-    <div v-for="(item, index) in items" :key="index" class="accordion-item">
-      <div class="accordion-title" v-on:click="toggleAccordion(index)">
-        {{ item.title }}   
-        <div v-if="item.open" class="accordion-content">
-        {{ item.content }}
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <div>
+          <p class="ms_title text-center">
+            What problem are you trying to solve?
+          </p>
+
+          <ul>
+            <li v-for="(curList, index) in listArray" :key="index">
+              <div class="d-flex w-100 justify-content-between py-2">
+               <h5 class="px-5">{{ curList.text }}</h5>
+                <button
+                  @click="showParagr(index)"
+                  class="border border-0 ms_btn"
+                >
+                  <i class="fa-solid fa-plus" v-if="!curList.visible"></i>
+                  <i class="fa-solid fa-minus" v-else></i>
+                </button>
+
+      
+              </div>
+
+              <div>
+                <div class="ms_paragraf px-5" v-if="curList.visible">
+                  <p class="ms_par-text px-4">{{ curList.parText }}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-   
     </div>
   </div>
 </template>
 
-
-
-<style scoped>
-.accordion-item {
-  margin-bottom: 10px;
+<style scoped lang="scss">
+@use "../style/partial/variables" as *;
+.ms_title {
+  font-size: 2.5rem;
 }
 
-.accordion-title {
-  cursor: pointer;
-  padding: 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
+ul {
+  list-style-type: none;
+}
+li {
+  .ms_btn {
+    background-color: lightgrey;
+    i {
+      font-size: 1.5rem;
+    }
+  }
 }
 
-.accordion-content {
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  display: none;
+i:hover {
+  color: $orange-color;
+}
+
+.ms_par-text {
+  font-size: 1rem;
 }
 </style>

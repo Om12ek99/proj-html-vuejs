@@ -13,26 +13,47 @@ export default {
 </script>
 
 <template>
-  <h1>Ottieni una consulenza personale</h1>
+<div class="py-5">
+  <div class="container py-5 d-flex justify-content-center">
 
-  <div class="container">
+       <div class="md_title py-5 fw-medium">
+    Get a personal consultation
+  
+       </div> 
+</div>
+
+</div>
+
+
+ 
+
+  <div class="container" style="width: 50%;">
     <div class="row">
-      <div class="col ">
+      <div class="col" >
         <AppCard />
       </div>
-      <div class="col ">
+      <div class="col" >
         <AppForm />
       </div>
     </div>
   </div>
-<div class="container">
-  <div class="row">
-    <div class="col">
-        <AppList />
-    </div>
-  </div>
-</div>
 
+  <section class="bgcolor">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <AppList />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.bgcolor{
+  background-color: lightgrey;
+}
+.md_title{
+  font-size: 5rem;
+}
+</style>
