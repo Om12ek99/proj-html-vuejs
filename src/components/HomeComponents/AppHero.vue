@@ -31,19 +31,16 @@ export default {
                     </a>
 
                 </div>
-<<<<<<< HEAD
                 <a href="#" class="w-75 py-3 text-center">
         <button type="button" class="btn ms_button fs-5">
             Our Services<i class="fa-solid fa-arrow-right"></i>
         </button>
       </a>
  
-=======
                 <div class="col">
                     <AppForm />
                 </div>
                 <!-- //NB ricordarti di mettere l'icona della freccia! -->
->>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
             </div>
 
             <!-- //Qui ci va il form che Valerio fa -->
@@ -60,16 +57,11 @@ export default {
     object-fit: fill;
     height: 725px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
 .ms_button {
     background-color: white;
     color: black;
     font-size: 10px;
     border: 1px solid black;
-<<<<<<< HEAD
     padding: 1rem 2rem;
     border-radius: 10px;
     i {
@@ -82,16 +74,6 @@ export default {
         border-color: white;
     }
 }
-    .text{
-        color: white;
-        h1{
-    margin-top: 7rem;
-    font-size: 4.5rem;
-=======
-
->>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
-}
-
 .text {
     color: white;
 

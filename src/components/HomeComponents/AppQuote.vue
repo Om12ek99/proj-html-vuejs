@@ -27,16 +27,14 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
-<<<<<<< HEAD
 img{
     width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.text{
-=======
+
+
 .text {
->>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
     padding: 5rem;
     width: 80%;
 }
