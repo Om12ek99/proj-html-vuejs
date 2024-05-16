@@ -25,7 +25,7 @@ export default {
                     <h5>George Anderson</h5>
                     <p id="company">Digitalbox CEO</p>
                 </div>
-                <div class="col">
+                <div class="col d-flex justify-content-center align-items-center">
                     <AppForm />
                 </div>
             </div>
@@ -62,5 +62,8 @@ hr {
 
 #company {
     font-size: smaller;
+}
+.form{
+    padding-top: 6rem;
 }
 </style>

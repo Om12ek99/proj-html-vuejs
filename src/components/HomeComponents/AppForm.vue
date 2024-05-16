@@ -8,9 +8,9 @@ export default {
 }
 </script>
 <template>
-      <div class="col-9 form">
+      <div class="col-9 form ">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body ">
             <div class="consultant d-flex flex-column justify-content-center align-items-center">
               <img src="https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/07/marketing-consultant-expert.jpg" alt="">
               <div class="text d-flex flex-column justify-content-center text-center gap-2 ">
@@ -47,6 +47,7 @@ img{
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .form-group{
   .form-control{
     height: 60px;
