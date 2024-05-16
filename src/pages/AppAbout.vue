@@ -24,27 +24,33 @@ export default {
       return {
         succesArray: [
           {
-            icons:"",
+            icons:"images.png",
             title:"245%",
             subTitle:"Successful rate",
             paragraf:"Curabitur ac leo nunc. Vestibulum et maruris vel ante finibus",
           },
           {
-            icons:"",
+            icons:"images.png",
             title:"#1",
             subTitle:"Marketing Firm",
             paragraf:"Curabitur ac leo nunc. Vestibulum et maruris vel ante finibus",
           },
           {
-            icons:"",
+            icons:"images.png",
             title:"520+",
             subTitle:"Business",
             paragraf:"Curabitur ac leo nunc. Vestibulum et maruris vel ante finibus",
           }, 
          ],
          
-      }  
+      }
+        
     },
+    methods: {
+      getImg(iconName) {
+        return new URL(`../assets/img/${iconName}`, import.meta.url).href;
+      }
+    }
    
 }
 </script>
@@ -67,7 +73,8 @@ export default {
   <div class="container">
     <div class="row">
       <div class="col" v-for="curCard in succesArray">
-        <AppAboutSuccesful  
+        <AppAboutSuccesful 
+          :icons    ="getImg(curCard.icons)" 
           :title    ="curCard.title"
           :subTitle ="curCard.subTitle"
           :paragraf ="curCard.paragraf"
