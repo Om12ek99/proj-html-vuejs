@@ -2,9 +2,9 @@
 export default {
   data() {
     return {
-        accountantImg: "brands/marketing-expert-cta.png",        // Percorso relativo dall'indice del progetto
-        accountantName: "Sandy Reiff",
-        accountantOccupation: "Marketing Consultant Expert",
+      accountantImg: "brands/marketing-expert-cta.png",        // Percorso relativo dall'indice del progetto
+      accountantName: "Sandy Reiff",
+      accountantOccupation: "Marketing Consultant Expert",
     }
   },
   methods: {
@@ -32,5 +32,4 @@ export default {
   </div>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

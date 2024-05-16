@@ -5,12 +5,12 @@
 <template>
     <div class="container py-5">
         <div class="row">
-            
+
             <div class="col d-flex justify-content-start align-items-center flex-column py-3">
-               
+
                 <p class="md_title w-75">
-                    We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.                </p>
-               
+                    We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential. </p>
+
                 <p class="md_sub-title w-75">
                     quisque aliquet, libero consequat
                     elementum convallis, erat imperdiet
@@ -31,7 +31,6 @@
 </template>
 
 <style scoped lang="scss">
-
 img {
     width: 600px;
 }
@@ -45,14 +44,14 @@ img {
 }
 
 .ms_button {
-  background-color:#f86011;
-  margin-top: 4.5rem;
+    background-color: #f86011;
+    margin-top: 4.5rem;
     padding: 0.8rem 2.3rem;
     border-radius: 12px;
     font-size: 18px
-    }
-    .ms_button:hover {
-  background-color: #e04e10; 
 }
 
+.ms_button:hover {
+    background-color: #e04e10;
+}
 </style>

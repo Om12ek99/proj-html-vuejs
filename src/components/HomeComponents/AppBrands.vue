@@ -1,34 +1,34 @@
 <script>
 import AppConsultantSingle from './AppConsultantSingle.vue';
-export default {    
+export default {
     components:
-    {AppConsultantSingle},
-    data(){
+        { AppConsultantSingle },
+    data() {
         return {
             brandImages: [                                                  //object contenente le icone
                 {
-                    src:"src/assets/img/brands/abstract.webp",              //link delle icone
-                    title:"abstract"                                        //nome delle icone
+                    src: "src/assets/img/brands/abstract.webp",              //link delle icone
+                    title: "abstract"                                        //nome delle icone
                 },
                 {
-                    src:"src/assets/img/brands/cglobal.webp",
-                    title:"cglobal"
+                    src: "src/assets/img/brands/cglobal.webp",
+                    title: "cglobal"
                 },
                 {
-                    src:"src/assets/img/brands/digitalbox.webp",
-                    title:"digitalbox"
+                    src: "src/assets/img/brands/digitalbox.webp",
+                    title: "digitalbox"
                 },
                 {
-                    src:"src/assets/img/brands/hemisferio.webp",
-                    title:"hemisferio"
+                    src: "src/assets/img/brands/hemisferio.webp",
+                    title: "hemisferio"
                 },
                 {
-                    src:"src/assets/img/brands/next.webp",
-                    title:"next"
+                    src: "src/assets/img/brands/next.webp",
+                    title: "next"
                 },
                 {
-                    src:"src/assets/img/brands/spaces.webp",
-                    title:"spaces"
+                    src: "src/assets/img/brands/spaces.webp",
+                    title: "spaces"
                 }
             ]
         }
@@ -51,19 +51,22 @@ export default {
 
         <!-- Drive leads and Sales with Avada -->
         <div class="row">
-            <AppConsultantSingle/>
+            <AppConsultantSingle />
         </div>
     </div>
 </template>
 <style scoped lang="scss">
-.container{                                             //eventualmente da modificare con bootrstrap
-    .row:first-child{
-       text-align: center;
-       margin-top:2rem;
-       margin-bottom: 2rem;
+.container {
+
+    //eventualmente da modificare con bootrstrap
+    .row:first-child {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
-img{
+
+img {
     width: 150px;
 }
 </style>
