@@ -7,22 +7,22 @@ export default {
                {
                 img      :"award-a.webp",
                 title    :"Winner Seo Master MAGT",
-                subTitle :"Smart Start Award 2017"
+                subTitle :"Smart Start Award 2017",
                },
                {
                 img      :"award-b.webp",                
                 title    :"Top Social Media Agencies",
-                subTitle :"nex Partner 2018"
+                subTitle :"nex Partner 2018",
                },
                {
                 img      :"award-c.webp",                
                 title    :"10 Fastest Growing Abstract",
-                subTitle :"Solution providers 2019"
+                subTitle :"Solution providers 2019",
                },
                {
                 img      :"award-d.webp",                
                 title    :"National Excellence Agencie",
-                subTitle :"Award Winner 2020"
+                subTitle :"Award Winner 2020",
                },
              ]
     }
@@ -43,12 +43,12 @@ export default {
             <li v-for="curAwards in awardsArray" class="text-center">
                 <a href="#">
                     <img 
-                    class="w-50" 
                     :src="getImgAwards(curAwards.img)" 
+                    class="w-50" 
                     alt="">
                 </a>
                 <div class="fw-bolder">{{ curAwards.title }}</div>
-                <div class="fw-bolder" >{{ curAwards.subTitle }}</div>
+                <div class="fw-bolder">{{ curAwards.subTitle }}</div>
             </li>
         </ul>
     </div>
@@ -60,11 +60,4 @@ export default {
         list-style-type: none;
 
     }
-    .color {
-        color:rgb(100 144 255);
-        a:hover {
-            color:$orange-color;
-        }
-    }
-
 </style>
