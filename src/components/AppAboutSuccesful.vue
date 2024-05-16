@@ -18,7 +18,7 @@ export default {
         
         <h1>{{ title }}</h1>
         <h2>{{ subTitle }}</h2>
-        <p> {{ paragraf }}</p>
+        <p class="fw-semibold"> {{ paragraf }}</p>
     </div>
 </template>
 
