@@ -13,12 +13,15 @@ export default {
 
 <template>
     <div class="md_card text-center">
+        
+            <img :src="icons" alt="" class="img-fluid w-25">
+        
         <h1>{{ title }}</h1>
         <h2>{{ subTitle }}</h2>
-        <p> {{ paragraf }}</p>
+        <p class="fw-semibold"> {{ paragraf }}</p>
     </div>
 </template>
 
 <style scoped lang="scss">
-
+   
 </style>

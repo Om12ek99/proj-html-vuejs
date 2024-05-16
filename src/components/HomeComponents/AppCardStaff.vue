@@ -1,20 +1,20 @@
 <script>
 export default {
     props: {
-        image    : String,
-        text    : String,
-        data : String,
-        paragraf : String
+        image: String,
+        text: String,
+        data: String,
+        paragraf: String
     },
-    data(){
+    data() {
         return {
-            
+
         }
     }
 }
 </script>
 <template>
-     <div class="md_card">
+    <div class="md_card">
         <img :src="image" alt="Card Image">
         <h2 class="text mt-3 mb-5">{{ text }}</h2>
         <h2 class="data">{{ data }}</h2>
@@ -22,14 +22,13 @@ export default {
     </div>
 </template>
 <style scoped lang="scss">
-
-img{
+img {
     width: 95%;
     border-radius: 10px;
 }
-.data{
+
+.data {
     font-weight: bold;
     font-size: 3.5rem;
 }
-
 </style>

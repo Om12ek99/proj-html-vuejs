@@ -2,9 +2,15 @@
 export default {
   data() {
     return {
+<<<<<<< HEAD
         accountantImg: "marketing-expert-cta.png",        // Percorso relativo dall'indice del progetto
         accountantName: "Sandy Reiff",
         accountantOccupation: "Marketing Consultant Expert",
+=======
+      accountantImg: "brands/marketing-expert-cta.png",        // Percorso relativo dall'indice del progetto
+      accountantName: "Sandy Reiff",
+      accountantOccupation: "Marketing Consultant Expert",
+>>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf
     }
   },
   
@@ -38,6 +44,7 @@ export default {
   
 </template>
 
+<<<<<<< HEAD
 <style scoped lang="scss">
 .wrapper{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -90,3 +97,6 @@ h2{
 }
 
 </style>
+=======
+<style scoped lang="scss"></style>
+>>>>>>> 23a1ab96e6b2462942b0ff1dd2ac000f3cbadabf

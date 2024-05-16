@@ -1,34 +1,33 @@
-
 <script>
 import AppCardStaff from "../HomeComponents/AppCardStaff.vue"
 export default {
-    components:{
-        AppCardStaff,
-    },
-    data(){
-        return {
-            ListCardArray: [
-          {
-            image:"https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg",
-            text:"How Spaces attracted five million visitors by improving the content",
-            data:"200%",
-            paragraf:"Higher revenue from digital",
-          },
-          {
-            image:"https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg",
-            text:"Creativity helped Hemisferio to increase their brand reach vertically",
-            data:"10x",
-            paragraf:"Sales increase with same ad spend",
-          },
-          {
-            image:"https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg",
-            text:"How DigitalBox used AI-powered data insight to boost sales",
-            data:"3-year",
-            paragraf:"Partnership with Avada Consultant",
-          }, 
-         ],
-        }
+  components: {
+    AppCardStaff,
+  },
+  data() {
+    return {
+      ListCardArray: [
+        {
+          image: "https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-1.jpg",
+          text: "How Spaces attracted five million visitors by improving the content",
+          data: "200%",
+          paragraf: "Higher revenue from digital",
+        },
+        {
+          image: "https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-4.jpg",
+          text: "Creativity helped Hemisferio to increase their brand reach vertically",
+          data: "10x",
+          paragraf: "Sales increase with same ad spend",
+        },
+        {
+          image: "https://avada.website/marketing-consultant/wp-content/uploads/sites/142/2020/06/case-studies-6.jpg",
+          text: "How DigitalBox used AI-powered data insight to boost sales",
+          data: "3-year",
+          paragraf: "Partnership with Avada Consultant",
+        },
+      ],
     }
+  }
 }
 </script>
 <template>
@@ -52,19 +51,20 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.text{
-    font-weight:bold ;
-    font-size: 3.5rem;
-}
-.ms_button {
-  background-color:#f86011;
-  margin-top: 4.5rem;
-    padding: 0.8rem 2.3rem;
-    border-radius: 12px;
-    font-size: 18px
-    }
-    .ms_button:hover {
-  background-color: #e04e10; 
+.text {
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
+.ms_button {
+  background-color: #f86011;
+  margin-top: 4.5rem;
+  padding: 0.8rem 2.3rem;
+  border-radius: 12px;
+  font-size: 18px
+}
+
+.ms_button:hover {
+  background-color: #e04e10;
+}
 </style>

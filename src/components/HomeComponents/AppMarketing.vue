@@ -1,9 +1,9 @@
 //ricordati di importare AppCardMarketing
 <script>
 export default {
-    data(){
+    data() {
         return {
-            
+
         }
     }
 }
@@ -30,10 +30,11 @@ export default {
 
 <style scoped lang="scss">
 .ms_button {
-    
-      background-color:#f86011;
-    }
-    h1{
-        font-size: 3rem;
-    }
+
+    background-color: #f86011;
+}
+
+h1 {
+    font-size: 3rem;
+}
 </style>
