@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      accountantImg: "brands/marketing-expert-cta.png",        // Percorso relativo dall'indice del progetto
+  
       accountantName: "Sandy Reiff",
       accountantOccupation: "Marketing Consultant Expert",
     }

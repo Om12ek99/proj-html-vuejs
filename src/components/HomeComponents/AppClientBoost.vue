@@ -1,5 +1,8 @@
 <script>
-
+import AppClientBoostBuild from './AppClientBoostBuild.vue';
+export default{
+   components: { AppClientBoostBuild },
+}
 </script>
 
 <template>
