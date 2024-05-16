@@ -39,7 +39,7 @@ export default {
 
 <template>
     <AppHero class="hero"/>
-    <AppConsultation/>
+    <AppConsultation class="consult"/>
     <AppBrands/>
     <AppListCard/>
     <AppClientBoost/>
@@ -63,7 +63,10 @@ export default {
     padding-top: 10rem;
 }
 .hero{
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
+}
+.consult{
+    margin-top: 10rem;
 }
 </style>
